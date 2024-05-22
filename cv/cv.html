@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CV Generator</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 16px;
+    }
+    
+    button {
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    .cv-output {
+      margin-top: 20px;
+    }
+    
+    .cv-output p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CV Generator</h2>
+    
+    <!-- Input fields -->
+    <label for="name">Name:</label>
+    <input id="name" type="text">
+    
+    <label for="email">Email:</label>
+    <input id="email" type="email">
+    
+    <label for="phone">Phone:</label>
+    <input id="phone" type="tel">
+    
+    <!-- Generate CV button -->
+    <button onclick="generateCV()">Generate CV</button>
+    
+    <!-- CV output -->
+    <div class="cv-output" id="cvOutput">
+      <!-- CV details will be dynamically added here -->
+    </div>
+  </div>
+  
+  <script>
+    // Function to generate the CV
+    function generateCV() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var phone = document.getElementById("phone").value;
+      
+      // Create CV output
+      var cvOutput = document.getElementById("cvOutput");
+      cvOutput.innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <!-- Add more CV details as needed -->
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Offender Management System</title>
+    <link rel="stylesheet" href="traffic offender.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traffic Offender Management System</h1>
+        
+        <input type="text" id="searchBar" placeholder="Search offender by name...">
+        <button id="searchBtn">Search</button>
+        
+        <table id="offenderTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Offense</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="offenderBody">
+                <!-- Offenders will be dynamically added here -->
+            </tbody>
+        </table>
+        
+        <form id="offenderForm">
+            <input type="hidden" id="offenderId">
+            <input type="text" id="offenderName" placeholder="Name">
+            <input type="text" id="offenderOffense" placeholder="Offense">
+            <button type="submit" id="updateBtn">Update</button>
+            <button type="reset" id="resetBtn">Reset</button>
+        </form>
+    </div>
+    <script src="traffic offenders.js"></script>
+</body>
+</html>
+
+

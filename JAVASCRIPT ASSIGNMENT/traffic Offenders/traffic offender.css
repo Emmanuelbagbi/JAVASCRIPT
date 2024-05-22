@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    padding: 10px;
+    width: 30%;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px;
+}
+
+form button#updateBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+form button#resetBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+#searchBar, #searchBtn {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 80%;
+    margin-right: 10px;
+}
+
+#searchBtn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+}
